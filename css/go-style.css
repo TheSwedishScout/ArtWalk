@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+html, body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+header{
+	   position: relative;
+    /* min-height: 10%; */
+    height: 8vh;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+header h1{
+	line-height: 8vh;
+}
+header h2{
+	line-height: 8vh;
+	
+}
+#logo{
+    /*position:absolute;*/
+    z-index:2;
+    max-height: 100%;
+}
+
+
+
+#map {
+	height: 100%;
+	z-index: 1;
+	width: 100vw;
+}
+#game{
+	position: absolute;
+	z-index: 3;
+	left: 0;
+	top:0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	margin: 10px;
+	padding: 10px;
+	display: none;
+	border-radius: 5px;
+}
+#game h1{
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+	grid-column: 1;
+	grid-row: 2;
+	grid-area: rubrik;
+}
+#game figure{
+	max-width: 100%;
+    max-height: 100%;
+    display:block;
+}
+#game figure.stor{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8)
+
+}
+#game figure.stor img{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+#game img{
+    margin:auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+#game div{
+	overflow: auto;
+	align-self: flex-end;
+	margin-top: 10px;
+}
+#game div p{
+	width: calc(100% - 10px);
+	text-align: left;
+}
+#game.show{
+	opacity: 1;
+	background: white;
+	display: flex;
+	flex-direction: column;
+}
+#game .close{
+    z-index:1;
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	padding: 3px;
+	border-radius: 5px;
+	border: 1px solid black;
+	cursor: pointer;
+	background:#FFFFFF;
+}
+#game .close:hover, #game .close:active{
+	-webkit-box-shadow: 2px -2px 3px #888888;
+	        box-shadow: 2px -2px 3px #888888; 
+}
+.FormatedText{
+	text-align: left;
+}
+.FormatedText ol, .FormatedText ul{
+	padding-left: 20px;
+	margin: 5px 0;
+}
+.FormatedText p{
+	margin: 5px 0;
+}
+.FormatedText>*:first-child{
+	margin-top: 0;
+}
+
+#wrapper{
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-rows: 100%;
+	    grid-template-rows: 100%;
+	-ms-grid-columns: 1fr 2fr;
+	    grid-template-columns: 1fr 2fr;
+	min-height: 92vh;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+#beenTo{
+    z-index:100;
+    background:green;
+    font-size:30px;
+}
+

@@ -1,0 +1,31 @@
+header{
+    width: 100%;
+    background: #9cbbff;   
+}
+.header-content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.header-content > a{
+    display: flex;
+    align-items: center;
+}
+.header-content > a h1{
+    margin-left: 8px;
+}
+
+
+
+@media (min-width: 610px) {
+    .header-content{
+        width: 610px;
+    }
+}
+
+@media (min-width: 920px) {
+    .header-content{
+        width: 920px;
+    }
+}
